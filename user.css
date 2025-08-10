@@ -1,14 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
 img {
     height: 200px;
 }
 
-.userData {
-    margin: 24px;
-}
 .container {
     margin: 24px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .imported {
     width: 30%;

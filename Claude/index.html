@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data with Sorting</title>
+        <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>User Directory</h1>
+        
+        <div class="controls">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect">
+                <option value="name">Name</option>
+                <option value="email">Email</option>
+                <option value="company">Company</option>
+                <option value="website">Website</option>
+            </select>
+        </div>
+        
+        <div id="dataContainer">
+            <div class="loading">Loading users...</div>
+        </div>
+    </div>
+
+    <script src="user.js"></script>
+
+</body>
+</html>

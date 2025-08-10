@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="user.css">
-
-</head>
-<body>
-    <div class="userData">
-        <input type="text"  id="idBox">
+    <link rel="stylesheet" href="user.css" />
+  </head>
+  <body>
+    <header>
+      <div class="userData">
+        <input type="text" id="idBox" />
         <button id="idBtn">Request</button>
-    </div>
+      </div>
+      <select id="filter" onchange="filterMovies(event)">
+        <option value="" disabled selected>Sort Movies</option>
+        <option value="A_Z">Alphabetically A-Z</option>
+        <option value="Z_A">Alphabetically Z-A</option>
+        <option value="LOW_TO_HIGH">Oldest to Newest</option>
+        <option value="HIGH_TO_LOW">Newest to Oldest</option>
+      </select>
+    </header>
 
-
-    <div class="container">
-    </div>
-    <script src="user.js"></script>
-</body>
+    <div class="container"></div>
+  </body>
 </html>
